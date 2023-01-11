@@ -1,0 +1,17 @@
+size = 20;
+spacing = 5;
+corner = 5;
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(255, 255, 255);
+  fill("red");
+  noStroke();
+  for (var y = 0; y < height; y += size + spacing) {
+    for (var x = 0; x < width; x += size + spacing) {
+      rect(x, y, size, size, corner);
+    }
+  }
+}
